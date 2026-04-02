@@ -1,0 +1,15 @@
+{
+  "name": "@pipeworx/mcp-fruityvice",
+  "version": "1.0.0",
+  "description": "MCP server for fruit nutritional data via Fruityvice API",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": ["src"],
+  "scripts": { "build": "tsc", "check": "tsc --noEmit" },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "fruityvice"],
+  "author": "Pipeworx <hello@pipeworx.io>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/pipeworx-io/mcp-fruityvice.git" },
+  "devDependencies": { "typescript": "^5.7.0" }
+}
