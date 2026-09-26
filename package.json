@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fruityvice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fruityvice MCP — wraps Fruityvice API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-bb599b48d224ff2c691cecf33016f4d3c64d8714e98191cde410b5716dd05e6e",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-1a48ee2637d0a2ef5e6712521191b72de8c1ac24980e7bd2476ce68bd5c6450c",
+    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
   }
 }
