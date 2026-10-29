@@ -1,0 +1,52 @@
+[
+  {
+    "name": "get_fruit",
+    "description": "Get nutritional facts for a specific fruit. Returns calories, protein, fat, carbs, sugar, and fiber per 100g (e.g., 'apple', 'banana').",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the fruit (e.g., \"banana\", \"apple\", \"mango\")."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "list_fruits",
+    "description": "List all available fruits with their nutritional profiles. Returns name, calories, protein, fat, carbs, sugar, and fiber for each.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_by_nutrition",
+    "description": "Find fruits matching a nutritional range. Specify nutrient type (calories, sugar, fat, carbs, protein) and min/max values to filter results.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "nutrient": {
+          "type": "string",
+          "description": "The nutrient to filter by. One of: calories, sugar, fat, carbohydrates, protein."
+        },
+        "min": {
+          "type": "number",
+          "description": "Minimum value for the nutrient (inclusive)."
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum value for the nutrient (inclusive)."
+        }
+      },
+      "required": [
+        "nutrient",
+        "min",
+        "max"
+      ]
+    }
+  }
+]

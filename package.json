@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-fruityvice",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Fruityvice MCP — wraps Fruityvice API (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-fruityvice": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "fruityvice"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-fruityvice.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/fruityvice",
   "pipeworx": {
-    "sourceHash": "v1-9496232abe6cf03339fdc1a42989e492f226c65bcabca9e2c2a0fd0e09c5e085",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "fruityvice",
+    "gatewaySlug": "fruityvice",
+    "sourceHash": "v1-6d2aaf953016551db33c7d052b44eba9ceab52ac83ae6ad3c95c3ad2768248ab",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
