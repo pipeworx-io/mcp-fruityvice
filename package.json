@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-fruityvice",
-  "version": "1.1.1",
-  "description": "Fruityvice MCP — wraps Fruityvice API (free, no auth)",
+  "version": "1.1.2",
+  "description": "Unofficial Fruityvice MCP — wraps Fruityvice API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "fruityvice",
     "gatewaySlug": "fruityvice",
-    "sourceHash": "v1-aa5c428cf3f8fd944beadb802ef317fea6336d3b293d7fc944cc021eabc5cfbd",
-    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
+    "sourceHash": "v1-1556f3d24f52d899cdb07acfb1cab4f0b9501c90f4d1beacfbee8d60ac39c54f",
+    "sourceCommit": "874331b0c46b151f9264bd14840631427a7721c1"
   }
 }
